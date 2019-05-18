@@ -1,4 +1,4 @@
-package com.yicj.demo.modules.user.controller;
+package com.yicj.jwt.modules.user.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.yicj.demo.common.entity.CheckToken;
-import com.yicj.demo.common.entity.LoginToken;
-import com.yicj.demo.common.util.JwtUtil;
-import com.yicj.demo.modules.user.entity.User;
-import com.yicj.demo.modules.user.service.UserService;
+
+import com.yicj.jwt.common.entity.CheckToken;
+import com.yicj.jwt.common.entity.LoginToken;
+import com.yicj.jwt.common.util.JwtUtil;
+import com.yicj.jwt.modules.user.entity.User;
+import com.yicj.jwt.modules.user.service.UserService;
 
 /**
  * @Author:jimisun

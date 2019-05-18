@@ -1,9 +1,9 @@
-package com.yicj.demo.modules.user.service.impl;
+package com.yicj.jwt.modules.user.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.yicj.demo.modules.user.entity.User;
-import com.yicj.demo.modules.user.service.UserService;
+import com.yicj.jwt.modules.user.entity.User;
+import com.yicj.jwt.modules.user.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

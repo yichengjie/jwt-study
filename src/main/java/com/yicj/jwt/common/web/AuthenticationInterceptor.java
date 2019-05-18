@@ -1,12 +1,13 @@
-package com.yicj.demo.common.web;
+package com.yicj.jwt.common.web;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.exceptions.JWTDecodeException;
-import com.yicj.demo.common.entity.CheckToken;
-import com.yicj.demo.common.entity.LoginToken;
-import com.yicj.demo.common.util.JwtUtil;
-import com.yicj.demo.modules.user.entity.User;
-import com.yicj.demo.modules.user.service.UserService;
+import com.yicj.jwt.common.entity.CheckToken;
+import com.yicj.jwt.common.entity.LoginToken;
+import com.yicj.jwt.common.util.JwtUtil;
+import com.yicj.jwt.modules.user.entity.User;
+import com.yicj.jwt.modules.user.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;

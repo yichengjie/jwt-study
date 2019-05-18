@@ -1,6 +1,6 @@
-package com.yicj.demo.modules.user.service;
+package com.yicj.jwt.modules.user.service;
 
-import com.yicj.demo.modules.user.entity.User;
+import com.yicj.jwt.modules.user.entity.User;
 
 public interface UserService {
 	User findUserById(String userId) ;

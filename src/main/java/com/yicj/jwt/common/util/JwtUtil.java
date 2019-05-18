@@ -1,11 +1,11 @@
-package com.yicj.demo.common.util;
+package com.yicj.jwt.common.util;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import com.yicj.demo.modules.user.entity.User;
+import com.yicj.jwt.modules.user.entity.User;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

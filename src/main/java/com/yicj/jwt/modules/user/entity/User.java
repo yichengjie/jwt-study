@@ -1,4 +1,4 @@
-package com.yicj.demo.modules.user.entity;
+package com.yicj.jwt.modules.user.entity;
 
 import lombok.Data;
 

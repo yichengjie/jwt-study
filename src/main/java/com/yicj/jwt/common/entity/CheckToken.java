@@ -1,4 +1,4 @@
-package com.yicj.demo.common.entity;
+package com.yicj.jwt.common.entity;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LoginToken {
-	boolean required() default true;
+public @interface CheckToken {
+	 boolean required() default true;
 }

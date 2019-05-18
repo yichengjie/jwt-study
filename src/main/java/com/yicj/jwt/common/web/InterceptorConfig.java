@@ -1,4 +1,4 @@
-package com.yicj.demo.common.web;
+package com.yicj.jwt.common.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.yicj.demo;
+package com.yicj.jwt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Demo02ApplicationTests {
+public class MyApplicationTests {
 
 	@Test
 	public void contextLoads() {
