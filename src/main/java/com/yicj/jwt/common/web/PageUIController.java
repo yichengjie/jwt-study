@@ -11,6 +11,10 @@ public class PageUIController {
 		return "login";
 	}
 	
+	@GetMapping("/")
+	public String defautPage() {
+		return "index";
+	}
 	@GetMapping("/index")
 	public String index() {
 		return "index";
