@@ -4,10 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yicj.jwt.common.entity.CheckToken;
@@ -22,13 +24,14 @@ import com.yicj.jwt.modules.user.service.UserService;
  * @Date:Created in 15:04 2018/8/15
  * @Modified By:
  */
-@RestController
+@Controller
 @RequestMapping("/api")
 public class UserController {
     @Autowired
     private UserService userService;
     
     @GetMapping("/hello")
+    @ResponseBody
     public Map<String,Object> hello() {
     	Map<String,Object> jsonObject = new HashMap<String,Object>();
     	User user = new User() ;
@@ -40,9 +43,13 @@ public class UserController {
     	return jsonObject ;
     }
     
+  
+    
+    
     //登录
-    @PostMapping("/login")
     @LoginToken
+    @PostMapping("/login")
+    @ResponseBody
     public Map<String,Object> login(@RequestBody @Valid User user) {
         Map<String,Object> jsonObject = new HashMap<String,Object>();
         User userForBase = userService.findByUsername(user);
@@ -65,6 +72,7 @@ public class UserController {
     //查看个人信息
     @CheckToken
     @GetMapping("/getMessage")
+    @ResponseBody
     public String getMessage() {
         return "你已通过验证";
     }

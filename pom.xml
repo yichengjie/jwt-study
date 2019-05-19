@@ -38,6 +38,10 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 		<!--引入JWT依赖,由于是基于Java，所以需要的是java-jwt-->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>

@@ -4,3 +4,14 @@ server:
     context-path: / #修改默认contextPath,默认为/
 logging:
   config: classpath:logback.xml
+spring:
+  freemarker:
+    tempalte-loader-path: classpath:/templates
+    cache: false
+    charset: utf-8
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    
