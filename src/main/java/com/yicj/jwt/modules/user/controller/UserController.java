@@ -35,7 +35,7 @@ public class UserController {
     public Map<String,Object> hello() {
     	Map<String,Object> jsonObject = new HashMap<String,Object>();
     	User user = new User() ;
-    	user.setId("001");
+    	user.setId(1000l);
     	user.setUsername("yicj");
     	user.setPassword("y123456");
     	jsonObject.put("user", user) ;

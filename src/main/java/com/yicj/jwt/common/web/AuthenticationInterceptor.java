@@ -53,9 +53,9 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                     throw new RuntimeException("无token，请重新登录");
                 }
                 // 获取 token 中的 user id
-                String userId;
+                Long userId;
                 try {
-                    userId = JWT.decode(token).getClaim("id").asString();
+                    userId = JWT.decode(token).getClaim("id").asLong();
                 } catch (JWTDecodeException j) {
                     throw new RuntimeException("访问异常！");
                 }

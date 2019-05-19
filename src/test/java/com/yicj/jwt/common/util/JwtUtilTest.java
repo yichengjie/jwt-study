@@ -11,7 +11,7 @@ public class JwtUtilTest {
 	
 	private User getUser() {
 		User user = new User() ;
-		user.setId("001");
+		user.setId(1000l);
 		user.setUsername("yicj");
 		user.setPassword("yicj123456");
 		return user ;

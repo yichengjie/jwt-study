@@ -8,7 +8,7 @@ import com.yicj.jwt.modules.user.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 	@Override
-	public User findUserById(String userId) {
+	public User findUserById(Long userId) {
 		User user = new User() ;
 		user.setId(userId);
 		user.setUsername("yicj");
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User findByUsername(User user) {
 		User u = new User() ;
-		u.setId("001");
+		u.setId(1000l);
 		u.setUsername(user.getUsername());
 		u.setPassword("y123456");
 		return u;
