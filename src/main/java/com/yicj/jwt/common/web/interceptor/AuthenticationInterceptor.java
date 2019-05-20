@@ -1,4 +1,4 @@
-package com.yicj.jwt.common.web;
+package com.yicj.jwt.common.web.interceptor;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.exceptions.JWTDecodeException;
